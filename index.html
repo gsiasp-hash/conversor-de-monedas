@@ -11,7 +11,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-light d-flex justify-content-center align-items-center vh-100">
+  <body
+    class="bg-light d-flex justify-content-center align-items-center vh-100"
+  >
     <div class="container bg-secondary rounded text-light text-center m-20 p-4">
       <h1 class="fw-bold">Conversor de monedas</h1>
       <div class="container bg-black rounded d-flex flex-column">
@@ -27,18 +29,21 @@
           <option value="USD">Dólares (USD)</option>
           <option value="EUR">Euros (EUR)</option>
           <option value="GBP">Libras Esterlinas (GBP)</option>
-          <option value="JPY">Yenes Japoneses (JPY)</option>
+          <option value="BTC">Bitcoin (BTC)</option>
         </select>
         <button id="convertButton" class="btn btn-primary mb-3">
           Convertir
         </button>
         <h2 id="result" class="fw-bold"></h2>
+        <canvas id="chart" width="300" height="100"></canvas>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
